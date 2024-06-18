@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits Store</title>
+    <link rel="stylesheet" href="../DUAN1/css/bootstrap.css">
+    <script src="../DUAN1/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../DUAN1/style.css">
+    <script src="../DUAN1/Jquerry/3.7.1.min.js"></script>
+    <script src="../DUAN1/Jquerry/text.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <section id="header">
+        <a href="../DUAN1/home.html"><img src="../DUAN1/Image/Logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="nav-bar">
+                <li><a href="../DUAN1/home.html">Home</a></li>
+                <li><a href="../DUAN1/shop1.html">Shop</a></li>
+                <li><a href="../DUAN1/blog.html">Blog</a></li>
+                <li><a href="../DUAN1/About.html">About</a></li>
+                <li><a href="../DUAN1/Contact.html" class="active">Contact</a></li>
+                <li><a href="../DUAN1/Sitemap.html">Site map</a></li>
+                <li>                
+                    <div class="search-comp">
+                        <input type="text" class="search-bar" placeholder="Search...">
+                        <button type="button" class="search-icon"><img src="../DUAN1/Image/search_icon.svg" alt=""></button>
+                    </div>
+                </li>
+                <a href="../DUAN1/login.html" class="user-icon"><img src="../DUAN1/Image/user_icon.svg" alt=""></a>
+            </ul>
+        </div>
+        
+    </section>
+    <nav >
+        <div class="contact-bg">
+          <h1 class="animated-text"> Contact <span>Us</span> </h1>
+        </div>
+    </nav>
+
+    <aside>
+        <div class="row text-center mt-4">
+            <div class="col-3 p-0"><img src="../DUAN1/Image/user.png" alt="" class="icon-contact item1"></div>
+            <div class="col-3 p-0" ><img src="../DUAN1/Image/home.png" alt="" class="icon-contact item2"></div>
+            <div class="col-3 p-0"><img src="../DUAN1/Image/phone-call.png" alt="" class="icon-contact item3"></div>
+            <div class="col-3 p-0"><img src="../DUAN1/Image/Mailform.png" alt="" class="icon-contact item4"></div>
+        </div>
+        <div class="row text-center mt-2">
+            <div class="col-3 p-0"> Đặng Anh Hào <br> Hà Duy Phát</div>
+            <div class="col-3 p-0" >12, Nguyễn Văn Bảo, phường 4, quận Gò Vấp</div>
+            <div class="col-3 p-0">Hào: 0903450812 <br> Phát: 0324352334</div>
+            <div class="col-3 p-0"><a href="">DangAnhHao2004@gmail.com</a> <br> <a href="">HaDuyPhat2004@gmail.com</a></div>
+        </div>
+        <div class="row mt-4">
+            <img src="../DUAN1/Image/map.jpg" alt="Map">
+
+        </div>
+        <div class="row mt-5 " style="justify-content: center; align-content: center; ">
+            <div class="col-9 border border-4 rounded">
+                <form class="form  p-5 ">
+                    <div class="row mt-3 ">
+                        <div class="col">
+                            <h1>Send Message</h1>
+                        </div>
+                        <div class="col">
+                            
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col" >
+                            <!-- <label for="">Họ và Tên</label> -->
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="addon-wrapping"><img src="../DUAN1/Image/user.png" alt="" width="35px" height="35px"></span>
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" id="IPusername">
+                            </div>
+                            <span id="tbusername" class="text-danger"></span>
+                        </div>
+                        <div class="col">
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="addon-wrapping"><img src="../DUAN1/Image/Mailform.png" alt="" width="35px" height="35px"></span>
+                                <input type="text" class="form-control" placeholder="E-Mail" aria-label="" aria-describedby="addon-wrapping" id="IPemail">
+                                
+                            </div>
+                            <span id="tbemail" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col">
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="addon-wrapping"><img src="../DUAN1/Image/phone-call.png" alt="" width="35px" height="35px"></span>
+                                <input type="text" class="form-control" placeholder="Phone Number" aria-label="" aria-describedby="addon-wrapping" id="IPphone">
+                            </div>
+                           <span id="tbphone" class="text-danger"></span>
+                        </div>
+                        <div class="col">
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="addon-wrapping"><img src="../DUAN1/Image/home.png" alt="" width="35px" height="35px"></span>
+                                <input type="text" class="form-control" placeholder="Address" aria-label="" aria-describedby="addon-wrapping" id="IPaddress">
+                            </div>
+                            <span id="tbaddress" class="text-danger"></span>
+                           
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                       <div class="col-12">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here"  style="height: 200px" id="IPmess"></textarea>
+                            <label for="IPmess">Message</label>
+                            
+                             
+                        </div>
+                        <span class="text-danger" id="tbmess"></span>
+                       </div>
+                    </div>
+                    <div class="row mt-4" >
+                        <div class="col-12 text-center" >
+                         <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#ModalSentMessage" id="sendmess" >Sent Messgase</button>
+                        </div>
+                        <!-- Modal -->
+                        <div id="displayModal">
+                            <p id="textdisplayModal" class="text-danger text-center " style="font-style: italic;"></p>
+                        </div>
+                       
+                       
+                    </div>
+     
+            </div>
+
+        </div>
+        
+    </aside>
+    
+
+
+   <hr>
+            
+     
+
+    <section id="feature">
+        <h2>Feature</h2>
+        <div class="feature-container">
+            <div class="organic">
+                <img src="../DUAN1/Image/leaf_icon.svg" alt="" class="organic-icon">
+                <h5>Organic fruit</h5>
+            </div>
+            <div class="online-shopping">
+                <img src="../DUAN1/Image/online_shop_icon.svg" alt="" class="online-shop-icon">
+                <h5>Easy to buy</h5>
+            </div>
+            <div class="delivery">
+                <img src="../DUAN1/Image/delivery_icon.svg" alt="" class="delivery-icon">
+                <h5>Fast delivery</h5>
+            </div>
+            <div class="support">
+                <img src="../DUAN1/Image/headset_icon.svg" alt="" class="support-icon">
+                <h5>Support service</h5>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <table class="contact-container">
+            <tr>
+                <td>
+                    <h4>CONTACT</h4>
+                </td>
+                <td>
+                    <h4>ADDRESS</h4>
+                </td>
+                <td>
+                    <h4>OPENING HOURS</h4>
+                </td>
+                <td>
+                    <h4>STORE</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>Tel: 0903450812 - 0324352334</td>
+                <td>12, Nguyễn Văn Bảo</td>
+                <td>Mon - Fri: 7am - 10pm</td>
+                <td>Shop All</td>
+            </tr>
+            <tr>
+                <td>Email: info@mysite.com</td>
+                <td>phường 4, quận Gò Vấp</td>
+                <td>Saturday: 8am - 10pm</td>
+                <td>Shipping & Returns</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Sunday: 8am - 11pm</td>
+                <td>Store policy</td>
+            </tr>
+            <tr class="footer-comp">
+                <td><address> © 2024 by Fruits Store. Powered and secured by ABC</address></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="#"><img src="../DUAN1/Image/facebook_icon.svg" alt="" class="facebook-icon"></a>
+                    <a href="#"><img src="../DUAN1/Image/youtube_icon.svg" alt="" class="youtube-icon"></a>
+                    <a href="#"><img src="../DUAN1/Image/instagram.png" alt="" class="github-icon"></a>
+                </td>
+            </tr>
+        </table>       
+    </section>
+
+</body>
+</html>

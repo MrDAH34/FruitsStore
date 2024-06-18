@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits Store</title>
+    <link rel="stylesheet" href="../DUAN1/style.css">
+    <link rel="stylesheet" href="../DUAN1/css/bootstrap.min.css">
+    <script src="../DUAN1/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <div class="login-container">
+            <div class="container position-relative">
+                <div class="row rounded-5 bg-white shadow">
+                    <div class="pt-4 px-5 col-md-6 rounded-start-5  z-1" style="background: linear-gradient(to right, #FFFFFF, #efecec )">
+                        <div class="mb-5 d-flex justify-content-between">
+                            <div>
+                                <h2>You are new?</h2>
+                                <h5>Be one of us.</h5>
+                            </div>
+                        </div>
+                        <div class="input-form">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="userNameSignup" placeholder="Username">
+                                <label for="userNameSignup" class="form-label">User name</label>
+                                <span class="text-danger invisible position-relative" id="invalidUser">Please enter username again*</span>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="passwordSignupInput" placeholder="Password">
+                                <label for="passwordSignupInput">Password</label>
+                                <span class="text-danger invisible" id="invalidPass">*</span>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="confirmPasswordInput" placeholder="Confirm Password">
+                                <label for="confirmPasswordInput">Confirm Password</label>
+                                <span class="text-danger invisible" id="notMatchPass">*</span>
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-success w-100" id="btnSignup" onclick="submit()">Sign Up</button>
+                            </div>
+                            <div class="mb-4 form-text text-center user-select-none">Or sign up with</div>
+                            <div class="mb-5 d-flex justify-content-evenly mx-5">
+                                <a href="#" class="social_icon"><img src="../DUAN1/Image/facebook_social.svg" alt="" ></a>
+                                <a href="#" class="social_icon"><img src="../DUAN1/Image/google_social.svg" alt="" ></a>
+                                <a href="#" class="social_icon"><img src="../DUAN1/Image/twitter_social.svg" alt="" ></a>
+                            </div>
+                            
+                        </div>
+                        <div class="success-form d-flex text-center justify-content-center visually-hidden mb-4" style="height: 403px;">
+                            <div>
+                                <div style="width: 50px; height: 50px;" class="bg-success rounded-circle px-2 py-2"><img src="../DUAN1/Image/check-solid.svg" alt=""></div>
+                                <span class="text-success">Success!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4 px-5 col-md-6 rounded-end-5 z-1" style="background: linear-gradient(to right, #efecec, #FFFFFF);">
+                        <div class="mb-5 d-flex justify-content-between">
+                            <div>
+                                <h2>Hello, again!</h2>
+                                <h5>We happy to see you here.</h5>
+                            </div>
+                        </div>
+                        <form class="was-validated">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="userName" placeholder="User Name" value="user1" required>
+                                <label for="userName" class="form-label">User name</label>
+                                <div class="invalid-feedback">Please enter user name*</div>
+                              </div>
+                              <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="passwordInput" placeholder="Password" value="123" required>
+                                <label for="passwordInput">Password</label>
+                                <div class="invalid-feedback">Please enter password*</div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="mb-5 form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberCheck">
+                                    <label class="form-check-label user-select-none" for="rememberCheck"><small>Remember me</small></label>
+                                </div>
+                                <small><a href="#" class="text-success" id="forgotPass">Forgot password?</a></small>
+                            </div>
+                        </form>
+                        <div class="mb-3">
+                            <button type="button" class="btn btn-success w-100" id="btnLogin">Login</button>
+                        </div>
+                        <div class="mb-4 form-text text-center user-select-none">Or login with</div>
+                        <div class="mb-4 d-flex justify-content-evenly mx-5">
+                            <a href="#" class="social_icon"><img src="../DUAN1/Image/facebook_social.svg" alt="" ></a>
+                            <a href="#" class="social_icon"><img src="../DUAN1/Image/google_social.svg" alt="" ></a>
+                            <a href="#" class="social_icon"><img src="../DUAN1/Image/twitter_social.svg" alt="" ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="loginSlide position-absolute" id="loginSlide">
+                    <div class="position-absolute" id="signTrans"> 
+                        <button type="button" class="btn btn-light w-25 text-success fw-semibold" style="margin: 150px 250px 20px;" onclick="logToSign()" id="signTransButton">Sign Up</button>
+                        <a class="gohome" href="../DUAN1/home.html">Home</a>
+                    </div>
+                    <div class="position-absolute d-none" id="loginTrans">
+                        <button type="button" class="btn btn-light w-25 text-success fw-semibold" style="margin: 150px 250px 20px;" onclick="signToLog()" id="loginTransButton">Login</button>
+                        <a class="back" href="../DUAN1/login.html">Back &rightarrow;</a>
+                    </div>
+                </div>
+            </div> 
+            <video autoplay loop class="w-100 no-controls">
+                <source src="../DUAN1/video/5857697-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <script src="../DUAN1/login.js"></script>
+</body>
+</html>
